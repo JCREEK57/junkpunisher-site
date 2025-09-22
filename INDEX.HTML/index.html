@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junk Punisher LLC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .contact {
+      text-align: center;
+    }
+    form {
+      margin-top: 1rem;
+      text-align: left;
+      display: inline-block;
+      max-width: 400px;
+      width: 100%;
+    }
+    form p {
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.75rem 1.5rem;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #0066cc;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Junk Punisher LLC</h1>
+    <p>Your local junk removal specialists</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        At Junk Punisher LLC, we take the hassle out of junk removal. 
+        Whether you’re cleaning out your garage, getting rid of old furniture, 
+        or tackling a full property cleanout, we’re here to help. 
+        Fast, reliable, and affordable service — we get the job done right.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Residential junk removal</li>
+        <li>Commercial cleanouts</li>
+        <li>Furniture & appliance hauling</li>
+        <li>Garage, attic, & basement cleanups</li>
+        <li>Yard waste & debris removal</li>
+        <li>Small demo projects</li>
+        <li>Mobile sandblasting</li>
+        <li>Dump trailer rental</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Have junk? Let us handle it.</p>
+      <!-- Phone number as an image -->
+      <p><img src="phone_number.png" alt="Call us: 321-693-9384"></p>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <p>
+          <label>Your Name:<br><input type="text" name="name" required></label>
+        </p>
+        <p>
+          <label>Your Email:<br><input type="email" name="email" required></label>
+        </p>
+        <p>
+          <label>Message:<br><textarea name="message" rows="5" required></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Junk Punisher LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
